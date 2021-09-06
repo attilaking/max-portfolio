@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import './style/App.scss';
+import Header from './components/Header';
+import './assets/style/App.scss';
+import './assets/style/main.css';
 
 function App() {
   const [date, setDate] = useState(null);
@@ -14,7 +16,7 @@ function App() {
   }, []);
   return (
     <main>
-
+      <Header />
     </main>
   );
 }
