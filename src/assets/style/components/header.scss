@@ -1,3 +1,13 @@
-.headerCont {
-    min-height: 500px;
+@use '../partials/general';
+
+.mx-headerCont {
+    min-height: 50vw;
+
+    &__left__herowrapper__hero {
+        font-size: 10vw;
+    }
+
+    &__primary {
+        color: general.$color-primary;
+    }
 }
