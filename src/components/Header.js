@@ -6,10 +6,6 @@ import heroImage from '../assets/img/max.jpg';
 const Header = () => {
     return (
         <div>
-            <div className="text-white bg-black sticky top-0 right-0 left-0 grid grid-cols-2 p-5">
-                <div className="grid justify-start">1</div>
-                <div className="grid justify-end">1</div>
-            </div>
             <div className="bg-black font-semibold grid grid-cols-2 mx-headerCont">
                 <div className="text-white grid items-center mx-headerCont__left">
                     <div className="pl-32 mx-headerCont__left__herowrapper">
