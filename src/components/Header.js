@@ -8,10 +8,10 @@ const Header = () => {
         <div>
             <div className="bg-black font-semibold grid grid-cols-2 mx-headerCont">
                 <div className="text-white grid items-center mx-headerCont__left">
-                    <div className="pl-32 mx-headerCont__left__herowrapper">
-                        <div className="leading-none mx-headerCont__left__herowrapper__hero">
-                            <div>Hello,</div>
-                            <div>I'm</div>
+                    <div className="pl-12 sm:pl-24 mx-headerCont__left__herowrapper">
+                        <div className="group leading-none mx-headerCont__left__herowrapper__hero">
+                            <div className="opacity-85">Hello,</div>
+                            <div className="opacity-85">I'm</div>
                             <div className="mx-headerCont__primary">Max</div>
                         </div>
                         <div className="text-gray-600 font-light mx-headerCont__left__herowrapper__sub">

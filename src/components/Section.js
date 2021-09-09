@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section = (props) => {
     return (
-        <div>
+        <div className={props.ContainerCssClass}>
             {props.children}
         </div>
     )
