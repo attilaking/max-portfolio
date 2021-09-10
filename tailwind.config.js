@@ -2,10 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-  },
+    extend: {
+      width: {
+       'w-60': '15rem',
+      }
+   }
+ },
   variants: {
-    extend: {},
-  },
+    width: ["responsive", "hover", "focus"]
+},
   plugins: [],
 }
