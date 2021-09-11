@@ -2,14 +2,18 @@ import React, { useState } from 'react';
 import githubLogo from '../assets/img/github.png';
 import burgerImg from '../assets/img/icons/burger.png';
 import cancelImg from '../assets/img/icons/cancel.png';
-import SideNav from '../components/SideNav';
+import SideNav from './SideNav';
 
-const Topnav = () => {
+const Navigation = () => {
 
     const [isSideMenuOpen, SetIsSideMenuOpen] = useState(false);
 
     const onSideMenuClicked = () => {
         SetIsSideMenuOpen(!isSideMenuOpen);
+    }
+
+    const onLinkClicked= () => {
+        SetIsSideMenuOpen(isSideMenuOpen = false);
     }
 
     return (
@@ -26,9 +30,9 @@ const Topnav = () => {
                     </div>
                 </div>
             </div>
-            <SideNav Open={isSideMenuOpen} />
+            <SideNav OnLinkClicked={onLinkClicked} Open={isSideMenuOpen} />
         </>
     )
 }
 
-export default Topnav;
+export default Navigation;

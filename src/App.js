@@ -1,60 +1,24 @@
 import React from 'react';
-import Header from './components/Header';
-import Topnav from './components/Topnav';
 import Section from './components/Section';
-import mouseImg from '../src/assets/img/mouse.jpg';
-import uiImg from '../src/assets/img/ui-design.png';
+import Home from './pages/Home';
+import { Router, Link } from "@reach/router";
+import About from './pages/About';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <main>
-      <Topnav />
-      <Header />
-      <Section>
-        <div className="grid grid-cols-1 sm:grid-cols-2">
-          <div class="pl-24 pt-24 pb-24 pr-4 grid items-center justify-items-center">
-            <div>
-              <div className="text-6xl font-semibold color">
-                About Me
-              </div>
-              <p className="text-xl font-light">I live in Brisbane, Australia, I am a passionate Fron-End developer and UI Designer. I am an early adopter, I love new technology. I never stop learning, I am always looking for new challenges in software development. </p>
-            </div>
-          </div>
-          <div className="grid items-center justify-items-center">
-            <img className="w-2/3" alt="mouse" src={mouseImg} />
-          </div>
-        </div>
-      </Section>
-
-      <Section ContainerCssClass="bg-gray-100">
-        <div className="grid grid-cols-1 sm:grid-cols-2 text-xl">
-          <div className="grid items-center justify-items-center">
-            <img className="w-2/3" alt="mouse" src={uiImg} />
-          </div>
-          <div class="pl-4 pt-24 pb-24 pr-24 grid items-top justify-items-center">
-            <div>
-              <div className="text-6xl font-semibold color">
-                Front-End
-              </div>
-              <p className="font-light">I have been a Front-End developer for about 4 years. I mainly work in Blazor/C# and React and relevant frameworks and technologies. My main focus are the following:</p>
-              <div class="font-light">
-                <div class="pl-4 pt-2 pb-2"><span className="font-bold">Blazor</span> / C# / .NET</div>
-                <hr />
-                <div class="pl-4 pt-2 pb-2"><span className="font-bold">React</span>  / JavaScript / Next.js</div>
-                <hr />
-                <div class="pl-4 pt-2 pb-2"><span className="font-bold">SASS</span>  / CSS / HTML5</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
+    <>
+      <Navigation />
+      <Router>
+        <Home path="/" />
+        <About path="/about"/>
+      </Router>
       <Section ContainerCssClass="bg-gray-800">
         <div className="pl-24 pt-6 pb-6 text-xl text-white font-light">
           <a href="https://www.linkedin.com/in/attilaking/">Max Attila King </a>- Front-End Developer & Ui Designer
         </div>
       </Section>
-    </main>
+    </>
   );
 }
 
