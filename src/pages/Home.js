@@ -5,7 +5,6 @@ import Section from '../components/Section';
 import mouseImg from '../assets/img/mouse.jpg';
 import arrowRightImg from '../assets/img/icons/arrow-right.png';
 import uiImg from '../assets/img/ui-design.png';
-import Button from '../components/Button';
 
 const Home = (props) => {
 
@@ -24,10 +23,10 @@ const Home = (props) => {
                                 About Me
                             </div>
                             <p className="text-xl font-light">I live in Brisbane, Australia, I am a passionate Fron-End developer and UI Designer. I am an early adopter, I love new technology. I never stop learning, I am always looking for new challenges in software development.</p>
-                            <div class="grid justify-items-end w-full">
-                                    <a href="/about">
-                                        <img className="mr-6 hover:mr-4 transition-margin duration-500 ease-in-out" style={{ "width": "35px" }} alt="more" src={arrowRightImg} />
-                                    </a>
+                            <div class="grid justify-items-end w-full pt-4">
+                                <a href="/about">
+                                    <img className="mr-6 hover:mr-4 transition-margin duration-500 ease-in-out" style={{ "width": "35px" }} alt="more" src={arrowRightImg} />
+                                </a>
                             </div>
                         </div>
                     </div>
