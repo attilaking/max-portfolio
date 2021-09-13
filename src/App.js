@@ -13,7 +13,7 @@ function App() {
         <Home path="/" />
         <About path="/about"/>
       </Router>
-      <Section ContainerCssClass="bg-gray-800">
+      <Section ContainerCssClass="bg-black">
         <div className="pl-24 pt-6 pb-6 text-xl text-white font-light">
           <a href="https://www.linkedin.com/in/attilaking/">Max Attila King </a>- Front-End Developer & Ui Designer
         </div>

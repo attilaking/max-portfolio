@@ -1,10 +1,18 @@
 import React from 'react';
+import { navigate } from "@reach/router"
 import Header from '../components/Header';
 import Section from '../components/Section';
 import mouseImg from '../assets/img/mouse.jpg';
+import arrowRightImg from '../assets/img/icons/arrow-right.png';
 import uiImg from '../assets/img/ui-design.png';
+import Button from '../components/Button';
 
 const Home = (props) => {
+
+    const OnButtonClicked = (link) => {
+        navigate(link);
+    }
+
     return (
         <>
             <Header />
@@ -15,7 +23,14 @@ const Home = (props) => {
                             <div className="text-6xl font-semibold color">
                                 About Me
                             </div>
-                            <p className="text-xl font-light">I live in Brisbane, Australia, I am a passionate Fron-End developer and UI Designer. I am an early adopter, I love new technology. I never stop learning, I am always looking for new challenges in software development. </p>
+                            <p className="text-xl font-light">I live in Brisbane, Australia, I am a passionate Fron-End developer and UI Designer. I am an early adopter, I love new technology. I never stop learning, I am always looking for new challenges in software development.</p>
+                            <div class="border-2 grid justify-items-end w-full">
+                                <div className="hint hint--top" aria-label="Show more">
+                                    <a href="/about">
+                                        <img className="border-2 hover:mr-4 transition-margin duration-500 ease-in-out" style={{ "width": "35px" }} alt="more" src={arrowRightImg} />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="grid items-center justify-items-center">

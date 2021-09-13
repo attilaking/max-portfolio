@@ -7,7 +7,7 @@ const About = (props) => {
         <>
             <Section>
                 <div className="grid grid-cols-1 sm:grid-cols-2">
-                    <div class="pl-24 pt-24 pb-24 pr-4 grid items-center justify-items-center">
+                    <div className="pl-24 pt-24 pb-24 pr-4 grid items-center justify-items-center">
                         <div>
                             <div className="text-6xl font-semibold color">
                                 About Me

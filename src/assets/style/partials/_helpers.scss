@@ -1,0 +1,5 @@
+@use './general';
+
+.text-primary {
+    color: general.$color-primary;
+}
