@@ -1,6 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import { style } from '../assets/style/components/header.scss';
+import '../assets/style/components/header.scss';
 import heroImage from '../assets/img/max.jpg';
 
 const Header = () => {

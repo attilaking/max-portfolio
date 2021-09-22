@@ -1,16 +1,12 @@
 import React from 'react';
-import { navigate } from "@reach/router"
+import { navigate } from '@reach/router'
 import Header from '../components/Header';
 import Section from '../components/Section';
 import mouseImg from '../assets/img/mouse.jpg';
 import arrowRightImg from '../assets/img/icons/arrow-right.png';
 import uiImg from '../assets/img/ui-design.png';
 
-const Home = (props) => {
-
-    const OnButtonClicked = (link) => {
-        navigate(link);
-    }
+const Home = () => {
 
     return (
         <>
@@ -36,7 +32,7 @@ const Home = (props) => {
                 </div>
             </Section>
 
-            <Section ContainerCssClass="bg-gray-100">
+            <Section containerCssClass="bg-gray-100">
                 <div className="grid grid-cols-1 sm:grid-cols-2 text-xl">
                     <div className="grid items-center justify-items-center">
                         <img className="w-2/3" alt="mouse" src={uiImg} />

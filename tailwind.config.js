@@ -9,6 +9,7 @@ module.exports = {
    }
  },
   variants: {
+    opacity: ['group-hover'],
     width: ["responsive", "hover", "focus"],
     rotate: ["responsive", "hover", "focus"],
     margin: ["responsive", "hover", "focus"]

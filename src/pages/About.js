@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import mouseImg from '../assets/img/mouse.jpg';
 
-const About = (props) => {
+const About = () => {
     return (
         <>
             <Section>

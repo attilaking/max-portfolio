@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Section = (props) => {
+const Section = ({children, containerCssClass}) => {
     return (
-        <div className={props.ContainerCssClass}>
-            {props.children}
+        <div className={containerCssClass}>
+            {children}
         </div>
     )
 }
