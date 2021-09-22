@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Section = ({children, containerCssClass}) => {
+const Section = ({
+    children, 
+    containerCssClass
+} : {
+    children:any, 
+    containerCssClass:string
+}) => {
     return (
         <div className={containerCssClass}>
             {children}

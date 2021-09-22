@@ -7,7 +7,7 @@ import { navigate } from '@reach/router'
 
 const Navigation = () => {
 
-    const [isSideMenuOpen, SetIsSideMenuOpen] = useState(false);
+    let [isSideMenuOpen, SetIsSideMenuOpen] = useState(false);
 
     const onSideMenuClicked = () => {
         SetIsSideMenuOpen(!isSideMenuOpen);
@@ -24,7 +24,7 @@ const Navigation = () => {
     return (
         <>
             <div className="text-white bg-black sticky top-0 right-0 left-0 grid grid-cols-2 pl-6 pr-6 pt-3 pb-3 z-40">
-                <div className="grid justify-start col-gap-4 items-center cursor-pointer pl-4" style={{ "grid-template-columns": "max-content 1fr" }}>
+                <div className="grid justify-start col-gap-4 items-center cursor-pointer pl-4" style={{ gridTemplateColumns: "max-content 1fr" }}>
                     <img onClick={onSideMenuClicked} className="opacity-75 transform rotate-0 hover:rotate-180 transition-rotate duration-500 ease-in-out" style={{ "width": isSideMenuOpen ? "25px" : "30px" }} alt="menu" src={isSideMenuOpen ? cancelImg : burgerImg} />
                     <div onClick={onLogoClicked} className={`pb-2 text-4xl transition-opacity duration-500 ease-in-out ${isSideMenuOpen ? "opacity-0" : "opacity-100"}`}>
                         <span className="font-extrabold">
